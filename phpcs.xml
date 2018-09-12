@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ruleset name="Wirecard ISO-To-PayPal Converter Standard">
+    <description>Wirecard ISO-To-PayPal Converter Standard</description>
+
+    <rule ref="PSR2"/>
+
+    <!-- Paths to check -->
+    <file>src</file>
+    <file>test</file>
+</ruleset>
