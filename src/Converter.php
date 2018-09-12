@@ -39,7 +39,7 @@ class Converter
     public function convert($country, $state = null)
     {
         if (!$state && !preg_match(self::ISO3166, $country)) {
-            throw new \InvalidArgumentException("Country must be a valid ISO-3166 code containing a state identifier.");
+            throw new \InvalidArgumentException("Country must be a fully formed ISO 3166-2 code if state parameter is omitted.");
         }
 
         if (!$state) {
