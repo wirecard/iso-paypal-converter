@@ -1,4 +1,4 @@
-# iso-paypal-converter
+# iso-payPal-converter
 Converts ISO-3166 codes to the codes the PayPal API requires
 
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/wirecard/opencart-ee/master/LICENSE)
