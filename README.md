@@ -1,8 +1,8 @@
-# ISO-3166 to PayPal Converter
+# ISO 3166-2 to PayPal Converter
 
-Converts ISO-3166 alpha 2 codes to the codes the PayPal API requires to identify your customers state.
+Converts [ISO 3166-2 alpha 2 codes](https://en.wikipedia.org/wiki/ISO_3166-2) to the [codes the PayPal API requires](https://developer.paypal.com/docs/classic/api/state_codes/) to identify your customers state.
 
-[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/wirecard/opencart-ee/master/LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/wirecard/iso-paypal-converter/blob/master/LICENSE)
 [![PHP v5.6](https://img.shields.io/badge/php-v5.6-yellow.svg)](http://www.php.net)
 [![PHP v7.0](https://img.shields.io/badge/php-v7.0-yellow.svg)](http://www.php.net)
 [![PHP v7.1](https://img.shields.io/badge/php-v7.1-yellow.svg)](http://www.php.net)
@@ -31,7 +31,7 @@ This automatically loads all the state mappings.
 
 ### Conversion
 
-To convert an ISO-3166 code to the correct PayPal identifier, you need only pass the country code
+To convert an ISO 3166-2 code to the correct PayPal identifier, you need only pass the country code
 and state identifier to the convert function like so: 
 
 ```php
@@ -39,7 +39,7 @@ $converter->convert("TH", "50");
 // => "Chiang Mai"
 ```
 
-Alternatively you can pass in a fully formed ISO-3166 code with state identifier like so:
+Alternatively you can pass in a fully formed ISO 3166-2 code with state identifier like so:
 
 ```php
 $converter->convert("JP-01");
@@ -56,7 +56,7 @@ $converter->convert("US");
 // => InvalidArgumentException
 ```
 
-A fully formed ISO-3166 code takes the form `XX-YY`.
+A fully formed ISO 3166-2 code takes the form `XX-YY`.
 
 If a country is not found in the conversion table, you will receive a `CountryNotFoundException`:
 
@@ -68,7 +68,7 @@ $converter->convert("AT-1");
 And finally, if the state cannot be found in the country you stated, you will receive 
 a `StateNotFoundException` like so:
 
-```
+```php
 $converter->convert("CA-NY");
 // => StateNotFoundException
 
