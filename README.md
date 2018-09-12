@@ -10,7 +10,7 @@ Converts [ISO 3166-2 alpha 2 codes](https://en.wikipedia.org/wiki/ISO_3166-2) to
 ## Installation
 
 The library can be installed using [Composer](https://getcomposer.org/download/).  
-If you have not installed Composer for your, you can follow the [offical instructions](https://getcomposer.org/doc/00-intro.md).
+If you have not installed Composer, you can follow the [offical instructions](https://getcomposer.org/doc/00-intro.md).
 
 Once composer is installed, run this in your terminal/command-line tool:
 
