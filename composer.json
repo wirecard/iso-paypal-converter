@@ -2,7 +2,7 @@
     "name": "wirecard/iso-paypal-converter",
     "description": "Converts ISO 3166-2 codes to the codes the PayPal API requires",
     "minimum-stability": "stable",
-    "license": "GPL-3.0-only",
+    "license": "MIT",
     "type": "library",
     "scripts": {
         "cs:check": "phpcs",
